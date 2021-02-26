@@ -11,5 +11,6 @@ func main() {
 	ssh := *(*reflect.StringHeader)(unsafe.Pointer(&a))
 	b := *(*[]byte)(unsafe.Pointer(&ssh))
 	fmt.Println(b)
-	fmt.Println([]byte(a))
+	c := []byte(a)
+	fmt.Println(c)
 }
