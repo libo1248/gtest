@@ -1,7 +1,15 @@
 package main
 
-import "fmt"
+import (
+	"container/list"
+	"fmt"
+)
 
 func main() {
-	fmt.Println("Hello Golang")
+	l := list.New()
+	x := l.Front()
+	if x == nil {
+		fmt.Println("xxx")
+	}
+	fmt.Println(x)
 }
